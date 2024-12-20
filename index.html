@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Wireless Mesh Network Monitoring Dashboard</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>Wireless Mesh Network Monitoring Dashboard</h1>
+  
+  <!-- Network Visualization -->
+  <div id="network-container">
+    <canvas id="networkCanvas" width="600" height="400"></canvas>
+  </div>
+
+  <!-- Control Buttons -->
+  <div id="controls">
+    <button onclick="addNode()">Add Node</button>
+    <button onclick="removeNode()">Remove Node</button>
+    <button onclick="detectSelfishNodes()">Detect Selfish Nodes</button>
+    <button onclick="startMobilitySimulation()">Start Mobility Simulation</button>
+    <button onclick="stopMobilitySimulation()">Stop Mobility Simulation</button>
+  </div>
+
+  <!-- Performance Metrics -->
+  <div id="metrics">
+    <h3>Network Metrics</h3>
+    <p>Throughput: <span id="throughput">0</span> Mbps</p>
+    <p>Latency: <span id="latency">0</span> ms</p>
+    <p>Packet Loss: <span id="packetLoss">0</span> %</p>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
